@@ -73,7 +73,7 @@ def evaluation_three(result_one, result_two, result_three, dim, output, dpi=600)
        # ((ax1, ax2, ax3), (ax4, ax5, ax6)) = plt.subplots(nrows=2, ncols=3, sharex='col', sharey='row')
     # -- Plot...
     #fig, axes = plt.subplots(nrows=2, ncols=3,sharex='col', sharey='row',figsize=(12,4))
-    reco_1.imshow(result_one, cmap=plt.get_cmap('gist_gray'), vmin=-0.5, vmax=1.2)
+  
     reco_1.plot([x0, x1], [y0, y1])
     reco_1.axis('off')
     reco_1.set_title('Ramp-Reco',fontsize=18, y=1.08)
@@ -81,7 +81,7 @@ def evaluation_three(result_one, result_two, result_three, dim, output, dpi=600)
     line_plot1.plot(line_plots[0])
     line_plot1.set_ylim([-0.5, 1.05])
 
-    reco_2.imshow(result_two, cmap=plt.get_cmap('gist_gray'), vmin=-0.5, vmax=1.2)
+ 
     reco_2.plot([x0, x1], [y0, y1])
     reco_2.axis('off')
     reco_2.set_title('Ram-Lak-Reco',fontsize=18, y=1.08)
@@ -89,7 +89,7 @@ def evaluation_three(result_one, result_two, result_three, dim, output, dpi=600)
     line_plot2.plot(line_plots[1])
     line_plot2.set_ylim([-0.5, 1.05])
 
-    reco_3.imshow(result_three, cmap=plt.get_cmap('gist_gray'), vmin=-0.5, vmax=1.2)
+
     reco_3.plot([x0, x1], [y0, y1])
     reco_3.axis('off')
     reco_3.set_title('Learned-Reco',fontsize=18, y=1.08)

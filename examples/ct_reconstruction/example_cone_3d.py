@@ -67,7 +67,7 @@ def example_cone_3d():
         result_back_proj = cone_backprojection3d(filtered_sino, geometry)
         reco = result_back_proj.eval()
         plt.figure()
-        plt.imshow(np.squeeze(reco)[volume_shape[0]//2], cmap=plt.get_cmap('gist_gray'))
+       
         plt.axis('off')
         plt.savefig('3d_cone_reco.png', dpi=150, transparent=False, bbox_inches='tight')
 

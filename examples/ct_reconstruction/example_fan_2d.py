@@ -68,7 +68,7 @@ def example_fan_2d():
         result_back_proj = fan_backprojection2d(sinogram_filtered, geometry)
         reco = result_back_proj.eval()
         plt.figure()
-        plt.imshow(np.squeeze(reco), cmap=plt.get_cmap('gist_gray'))
+      
         plt.axis('off')
         plt.savefig('2d_fan_reco.png', dpi=150, transparent=False, bbox_inches='tight')
 

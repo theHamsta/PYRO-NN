@@ -74,7 +74,7 @@ def example_fan_2d_shortscan():
         reco = result_back_proj.eval()
 
         plt.figure()
-        plt.imshow(np.squeeze(reco), cmap=plt.get_cmap('gist_gray'))
+     
         plt.axis('off')
         plt.savefig('2d_fan_short_scan_reco.png', dpi=150, transparent=False, bbox_inches='tight')
 

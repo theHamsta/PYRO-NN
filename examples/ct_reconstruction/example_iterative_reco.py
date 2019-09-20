@@ -68,7 +68,7 @@ def iterative_reconstruction():
         iter_pipeline.train(zero_vector,np.asarray(acquired_sinogram))
 
     plt.figure()
-    plt.imshow(np.squeeze(iter_pipeline.result), cmap=plt.get_cmap('gist_gray'))
+    
     plt.axis('off')
     plt.savefig('iter_tv_reco.png', dpi=150, transparent=False, bbox_inches='tight')
 
